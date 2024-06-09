@@ -7,8 +7,12 @@ package $2
 
 // SOLUTION
 
-func Solve(input string) string {
-    return input
+func Solve(input string) int {
+	return 0
+}
+
+func SolvePart2(input string) int {
+	return 0
 }
 EOL
 }
@@ -21,11 +25,19 @@ package $2
 import "testing"
 
 func TestSolve(t *testing.T) {
-    input := "123"
-    expected := "123"
-    if result := Solve(input); result != expected {
-        t.Errorf("Solve() = %v, want %v", result, expected)
-    }
+	input := "123"
+	expected := 0
+	if result := Solve(input); result != expected {
+		t.Errorf("Solve() = %v, want %v", result, expected)
+	}
+}
+
+func TestSolvePart2(t *testing.T) {
+	input := "123"
+	expected := 0
+	if result := SolvePart2(input); result != expected {
+		t.Errorf("Solve() = %v, want %v", result, expected)
+	}
 }
 EOL
 }
@@ -49,6 +61,9 @@ func main() {
 	}
 	result := $2.Solve(input)
 	fmt.Println(result)
+
+	result2 := $2.SolvePart2(input)
+	fmt.Println(result2)
 }
 EOL
 }
